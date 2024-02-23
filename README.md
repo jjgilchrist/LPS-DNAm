@@ -6,4 +6,4 @@ DNA methylation (DNAm) has pervasive effects on gene expression and associations
 [Preprint](https://www.biorxiv.org/content/10.1101/2023.05.17.541041v1)
 
 **Overview of repository**
-* LPS-induced differential methylation in monocytes: contains R script and source data to reproduce analysis and figures exploring changes in DNAm in monocytes in response to LPS stimulation.
+* LPS-induced differential methylation in monocytes: contains R script and source data to reproduce analysis and figures exploring changes in DNAm in monocytes in response to LPS stimulation. Includes; control of inflation and bias using bacon [Maarten van Itersen, *et al*. "Controlling bias and inflation in epigenome- and transcriptome-wide association studies using the empirical null distribution." *Genome Biology.* 2017.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1131-9), enrichment analyses exploring immune-modulated CpG genomic context, transcription factor binding site overlap, and local genic enrichment for biological and disease pathways.
