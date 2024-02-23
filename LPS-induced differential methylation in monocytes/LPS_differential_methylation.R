@@ -23,7 +23,7 @@ cols <- brewer.pal(8,"Set2")
 cols2 <- brewer.pal(8,"Dark2")
 cols3 <- brewer.pal(8,"Paired")
 
-#read in differential methylation output
+#read in differential methylation output - as calculated with pairwise linear models on normalized data using the lmFit and eBayes function in limma
 d1 <- read.table("diff_meth.out", header = T, row.names = 1)
 
 #estimate bias and inflation with bacon from t statistics
