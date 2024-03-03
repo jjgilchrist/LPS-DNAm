@@ -46,16 +46,6 @@ mqtl.manh <- ggplot(don, aes(x=BPcum, y=-log10(pval))) +
   geom_point(data=subset(don, cols=="meth.sig"), color="firebrick2", size=3) +
   geom_point(data = subset(don, sig==0), aes(color=as.factor(chr)), size=3, alpha= 0.75) +
   scale_color_manual(values = rep(c("grey70","grey30"), 11 )) +
-
-  # Add test using ggrepel to avoid overlapping
-  #geom_text_repel( data=subset(don, annotate==1), aes(label=cpg), size=5, min.segment.length = unit(0, 'lines'), nudge_y = 30) +
-  #geom_text_repel( data=subset(don, min_for_peak==1 & cis.mediator=="GNLY"), aes(label=trans_gene), size=5, min.segment.length = unit(0, 'lines'),
-  #nudge_y = 5, force = 1) +
-  #geom_text_repel( data=subset(don, min_for_peak==1 & cis.mediator=="UVSSA"), aes(label=trans_gene), size=5, min.segment.length = unit(0, 'lines'),
-  #nudge_y = 5, force = 1) +
-  #geom_text_repel( data=subset(don, min_for_peak==1 & cis.mediator=="KIR"), aes(label=trans_gene), size=5, min.segment.length = unit(0, 'lines'),
-  #nudge_y = 5, force = 1) +
-  
   
   # custom X axis:
   scale_x_continuous( label = axisdf$chr[c(1:14,16,18,20,22)], breaks= axisdf$center[c(1:14,16,18,20,22)] ) +
